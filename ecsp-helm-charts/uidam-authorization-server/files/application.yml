@@ -1,0 +1,8 @@
+server:
+  port: 9443
+  ssl:
+    enabled: true
+    key-store: ./uidamauthserver.jks
+    key-store-password: changeit
+    key-store-type: JKS
+    key-alias: uidamauthserver

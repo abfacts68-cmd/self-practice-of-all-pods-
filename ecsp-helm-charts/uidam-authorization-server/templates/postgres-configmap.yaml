@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: uidam-postgres-config
+data:
+  uidam-authorization-server-postgres-config.yml: |-
+{{ .Files.Get "files/uidam-authorization-server-postgres-config.yml" | nindent 4 }}
